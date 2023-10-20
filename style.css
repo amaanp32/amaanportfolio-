@@ -1,0 +1,426 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* home */
+.container {
+    height: 100vh;
+    background-color: #F6F3EE;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.items a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #2D2823;
+    font-size: 1.5rem;
+    font-weight: bold;
+    --b: 0.1em;
+    /* the thickness of the line */
+    --c: red;
+    /* the color */
+
+    color: #0000;
+    padding-block: var(--b);
+    background:
+        linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+}
+
+.items a:hover {
+    color: #D2042D;
+    --_p: 100%;
+    --_s: .3s;
+}
+
+.active {
+    color: #D2042D !important;
+}
+
+button {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding: 0.6rem 1rem;
+    color: #2D2823;
+    background-color: #f0ff00;
+    border: 1px solid #f0ff00;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 3fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid {
+    height: 575px;
+    width: 835px;
+    margin-top: 50px;
+}
+
+.hero-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+    font-size: 4rem;
+    margin-left: 325px;
+    margin-bottom: 27px;
+    color: #2D2823;
+}
+
+.hero-subheading {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #2D2823;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 322px;
+    color: #2D2823;
+    font-weight: bold;
+}
+
+span {
+    background-color: #f0ff00;
+    border-radius: 5px;
+}
+
+
+
+/* About */
+.container2 {
+    height: 100vh;
+    background-color: #CBC7B7;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 3fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid2 {
+    height: 624px;
+    width: 456px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.hero-heading2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+    font-size: 4rem;
+    margin-left: 320px;
+    margin-bottom: 27px;
+    color: #2D2823;
+}
+
+.hero-subheading2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 320px;
+    color: #2D2823;
+    font-weight: bold;
+    --b: 0.1em;
+    /* the thickness of the line */
+    --c: red;
+    /* the color */
+
+    color: #0000;
+    padding-block: var(--b);
+    background:
+        linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+}
+
+.hero-subheading2:hover {
+    --_p: 100%;
+    --_s: .3s;
+}
+
+.line {
+    border-bottom: 1px solid #000000;
+    margin-left: 319px;
+    margin-right: 145px;
+    margin-top: 36px;
+}
+
+
+
+/* education */
+.container3 {
+    background-color: #F6F3EE;
+    height: 100vh;
+}
+
+.hero-heading3 {
+    font-family: 'Playfair Display', serif;
+    padding-left: 111px;
+    font-size: 6rem;
+    color: #2D2823;
+}
+
+.hero-subheading3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2D2823;
+    font-size: 2rem;
+    padding-left: 750px;
+    padding-top: 23px;
+}
+
+.list {
+    font-family: 'Poppins', sans-serif;
+    color: #2D2823;
+    padding-left: 838px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bi-arrow-return-right {
+    margin-right: 22px;
+    height: 26px;
+    width: 26px;
+}
+
+
+/* my art  */
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #F6F3EE;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+    margin: 0 0 18px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: #2D2823;
+    transition: color 0.3s ease-out;
+}
+
+article p {
+    font-family: 'Poppins', sans-serif;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+    padding: 24px;
+}
+
+article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2D2823;
+}
+
+article a:focus {
+    outline: 1px dotted #2D2823;
+}
+
+article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: #6e6d28;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/************************ 
+  Generic layout (demo looks)
+  **************************/
+
+*,
+*::before,
+*::after {}
+
+.hero-heading4 {
+    font-family: 'Playfair Display', serif;
+    padding-left: 111px;
+    font-size: 6rem;
+    color: #2D2823;
+}
+
+.boo {
+    margin: 0;
+    padding: 48px 0;
+    font-family: "Figtree", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    background-color: #CBC7B7;
+    height: 100vh;
+}
+
+.articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 44px;
+}
+
+@media screen and (max-width: 960px) {
+    article {
+        container: card/inline-size;
+    }
+
+    .article-body p {
+        display: none;
+    }
+}
+
+@container card (min-width: 380px) {
+    .article-wrapper {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 16px;
+    }
+
+    .article-body {
+        padding-left: 0;
+    }
+
+    figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    figure img {
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* footer  */
+.container5 {
+    height: 100vh;
+    background-color: #2D2823;
+    color: #F6F3EE;
+}
+
+.info6 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.suhea {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-heading5 {
+    font-size: 6rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-subheading5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.lets {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-left: 1200px;
+    padding-top: 80px;
+}
+
+.letsvg {
+    margin-right: 10px;
+    height: 26px;
+    width: 26px;
+}
